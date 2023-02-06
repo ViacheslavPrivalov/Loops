@@ -1,5 +1,98 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+        task8();
+        task9();
+        task10();
+
+    }
+
+    public static void task1() {
+        System.out.println("Задача1");
+        for (int i = 1; i < 11; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task2() {
+        System.out.println("Задача2");
+        for (int i = 10; i > 0; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task3() {
+        System.out.println("Задача3");
+        for (int i = 0; i < 17; i += 2) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task4() {
+        System.out.println("Задача4");
+        for (int i = 10; i > -11; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task5() {
+        System.out.println("Задача5");
+        for (int i = 1904; i <= 2096; i += 4) {
+            System.out.println(i + " год является високосным");
+        }
+    }
+
+    public static void task6() {
+        System.out.println("Задача6");
+        for (int i = 7; i < 99; i += 7) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
+    public static void task7() {
+        System.out.println("Задача7");
+        for (int i = 1; i < 513; i *= 2) {
+            System.out.println(i);
+        }
+        System.out.println("Ещё один способ");
+        for (int j = 0; j < 10; j++) {
+            System.out.println(Math.pow(2, j));
+        }
+    }
+
+    public static void task8() {
+        System.out.println("Задача8");
+        int sumOfSavings = 29000;
+        int deposit = 0;
+        for (int i = 0; i < 12; i++) {
+            deposit += sumOfSavings;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+        }
+    }
+
+    public static void task9() {
+        System.out.println("Задача9");
+        int sumOfSavings = 29000;
+        int deposit = 0;
+        for (int i = 0; i < 12; i++) {
+            deposit += deposit / 100;
+            deposit += sumOfSavings;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+        }
+    }
+
+    public static void task10() {
+        System.out.println("Задача10");
+        for (int i = 1; i < 11; i++) {
+            System.out.println("2*" + i + "=" + (i * 2));
+        }
     }
 }
