@@ -8,9 +8,9 @@ public class Main {
         task5();
         task6();
         task7();
-//        task8();
-//        task9();
-//        task10();
+        task8();
+        task9();
+        task10();
 
     }
 
@@ -65,6 +65,34 @@ public class Main {
         System.out.println("Ещё один способ");
         for (int j = 0; j < 10; j++) {
             System.out.println(Math.pow(2, j));
+        }
+    }
+
+    public static void task8() {
+        System.out.println("Задача8");
+        int sumOfSavings = 29000;
+        int deposit = 0;
+        for (int i = 0; i < 12; i++) {
+            deposit += sumOfSavings;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+        }
+    }
+
+    public static void task9() {
+        System.out.println("Задача9");
+        int sumOfSavings = 29000;
+        int deposit = 0;
+        for (int i = 0; i < 12; i++) {
+            deposit += deposit / 100;
+            deposit += sumOfSavings;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+        }
+    }
+
+    public static void task10() {
+        System.out.println("Задача10");
+        for (int i = 1; i < 11; i++) {
+            System.out.println("2*" + i + "=" + (i * 2));
         }
     }
 }
